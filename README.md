@@ -37,4 +37,7 @@ Deploy
 	```
 
 3. Reboot and enjoy it!
-
+-------------------------------------------
+thanks to author: shenjia , but I failed to auto-start the service when reboot, so I use another way:
+a) only download and edit the python script
+b) sudo vi /etc/rc.local, add '  /usr/bin/python /usr/local/bin/raspbian-ip-mailer.py ' before ' exit 0 '
